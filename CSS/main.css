@@ -1,0 +1,131 @@
+.container{
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  color: white;
+}
+
+.container>div{
+  width: 350px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: start;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+
+.container>div span{
+  font-size: 15px;
+  padding: 6px;
+  background-color: purple;
+  color: white;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.container__box{
+  position: relative;
+  width: 300px;
+  height: auto;
+  margin: 20px 0;
+  padding: 25px;
+  background-color: #f7f7f7;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05);
+  border-radius: 20px;
+  opacity: 60%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: transform .2s ease-in-out;
+}
+
+.container__box:hover{
+  transform: scale(1.02, 1.02);
+  opacity: 1;
+}
+
+.check{
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  font-size: 17px;
+}
+
+.previous{
+  top: 15px;
+  left: 15px;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  font-size: 17px;
+}
+
+.delete{
+  bottom: 10px;
+  right: 10px;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  font-size: 17px;
+}
+
+.container input{
+  padding: 15px;
+  background: none;
+  border-style: none;
+  border: none;
+  border-bottom: 4px solid white;
+  font-size: 15px;
+  color: white;
+  border-radius: 10px;
+  transition: background-color .1s ease-in-out;
+}
+
+.container input:focus{
+  outline: none;
+  background-color: gray;
+  opacity: 50%;
+}
+
+.container input:hover{
+  opacity: 70%;
+}
+
+.container ::placeholder{
+  color: aquamarine;
+}
+
+.inProgress{
+  margin:0 20px;
+}
+
+.notStarted__form,
+.inProgress__form{
+  position: relative;
+  margin-top: 15px;
+}
+
+.notStarted__form button,
+.inProgress__form button{
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.notStarted__form i,
+.inProgress__form i{
+  color: white;
+  font-size: 25px;
+}

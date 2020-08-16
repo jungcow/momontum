@@ -1,0 +1,64 @@
+header{
+  height: 50px;
+  opacity: 70%;
+  padding: 20px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h2,
+header form
+{
+  display: none;
+}
+
+.showing{
+  display: block;
+}
+
+.js-user input{
+  background-color: gray;
+  border-style: none;
+  padding: 15px;
+  border: none;
+  font-size: 30px;
+  color: white;
+  border-radius: 10px;
+  transition: background-color .1s ease-in-out;
+}
+
+.js-user input:focus{
+  outline: none;
+  border-bottom: 4px solid white;
+  background: none;
+}
+
+.js-user input:hover{
+  opacity: 50%;
+}
+
+.js-user ::placeholder{
+  color: white;
+}
+
+@keyframes surround{
+  0%{
+    opacity: 0;
+  }100%{
+    opacity: 60%;
+    padding: 10px 70px;
+    background-color:#2f3640;
+    border-radius: 10px;
+  }
+}
+
+.userName{
+  animation: surround .5s linear forwards
+}
+.js-user h2{
+  font-size: 40px;
+  color: white;
+}
+

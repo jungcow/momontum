@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='./CSS/index.css'>
+  <script src="https://kit.fontawesome.com/e3f363fa3d.js" crossorigin="anonymous"></script>
+  <title>Momentum</title>
+  <script defer src='./JS/clock.js'></script>
+  <script defer src='./JS/user.js'></script>
+  <script defer src='./JS/todo.js'></script>
+  <script defer src='./JS/bg.js'></script>
+  <script defer src='./JS/weather.js'></script>
+</head>
+
+<body>
+  <div class="leftSide"></div>
+  <div class='allContainer'>
+    <div class="status">
+      <div class="flex-start">
+        <h2 class='js-clock'>00:00</h2>
+      </div>
+      <h1></h1>
+      <div class="flex-end">
+        <h6 class='js-weather'></h6>
+      </div>
+    </div>
+    <header>
+      <div class="js-user">
+        <form>
+          <input type="text" placeholder="White name!">
+        </form>
+        <h2></h2>
+      </div>
+    </header>
+    <div class='container'>
+      <div class='notStarted'>
+        <div class="notStarted__container">
+          <span>Not Started</span>
+        </div>
+        <form class='notStarted__form'>
+          <button>
+            <i class="far fa-plus-square"></i>
+          </button>
+          <input type="text" placeholder="Write you are gonna do!">
+        </form>
+      </div>
+      <div class='inProgress'>
+        <div class='inProgress__container'>
+          <span>In progress</span>
+        </div>
+        <form class='inProgress__form'>
+          <button>
+            <i class="far fa-plus-square"></i>
+          </button>
+          <input type="text" placeholder="Write you are doing!">
+        </form>
+      </div>
+      <div class='complete'>
+        <div class="complete__container">
+          <span>Complete</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="rightSide"></div>
+</body>
+
+</html>
